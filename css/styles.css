@@ -1,0 +1,225 @@
+/* This file is part of deegree, for copyright/license information, please visit http://www.deegree.org/license. */
+body, html
+        { font-family: verdana, arial, helvetica, geneva;
+        height: 92%;
+        width: 100%;
+        font-size: 10pt;
+        color: #220000;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.logotable
+        {width: 98%;
+        min-width: 970px;
+        height: 30px;}
+
+.menutable
+        {width: 98%;
+        min-width: 970px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+.control {
+        padding: 5px;
+        margin: 0px;
+}
+
+.main
+        { background-color: #EDEDCD;
+        width: 98%;
+        height: 80%;
+        min-width: 970px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: -5px;
+        }
+
+.scrollable {
+		overflow: auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+}
+
+.maintable
+        { background-color: #EDEDCD;
+        width: 98%;
+        height: 80%;
+        min-width: 970px;
+        margin-left: auto;
+        margin-right: auto;
+    	border: 0px;
+	    padding: 6px;}
+
+.maintablebig
+        { background-color: #EDEDCD;
+        width: 98%;
+        height: 85%;
+        min-width: 970px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 0px;
+	    padding: 6px;}
+
+.submittable {
+    background-color: #EDEDCD;
+        width: 98%;
+        min-width: 970px;
+        height: 5%;
+    	border: 0px;
+	    padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: -5px;
+}
+
+.largeselect
+  { width: 380px;
+    margin: 5px; }
+
+.pagetitle
+        { font-family: verdana, arial, helvetica, geneva;
+        font-size: 18pt;
+        font-weight: bold;
+    text-align: center;}
+
+.caption
+        { font-family: verdana, arial, helvetica, geneva;
+        font-size: 18pt;
+        font-weight: bold;
+        }
+
+.menu
+        {background-color: #E77919;
+        margin: 10px;
+        padding: 2px;}
+
+.tinymenu
+        { background-color: #E77919;
+        margin: 10px;
+        padding: 2px;
+    font-family: verdana, arial, helvetica, geneva;
+        font-size: 7pt; }
+
+.caption
+    { font-size: 10pt;
+        font-weight: bold;
+        padding: 6px; }
+
+.hidden
+        { display:none; }
+
+a
+        { color: #FFFFFF;
+        text-decoration: none;
+        font-weight: bold; }
+
+td
+        { font-family: verdana, arial, helvetica, geneva;
+        font-size: 10pt;
+        margin: 5px;
+        padding: 0px;}
+
+h1
+        {font-size: 24pt;
+        font-weight: bold;
+        margin: 5px;
+        padding: 0px;}
+
+h2
+        {font-size: 18pt;
+        font-weight: bold;
+        margin: 5px;
+        padding: 0px;}
+
+h3
+        {font-size: 14pt;
+        font-weight: normal;
+        margin: 5px;
+        padding: 0px;}
+
+h4
+        {font-size: 10pt;
+        font-weight: bold;
+        margin: 10px;
+        padding: 10px;}
+
+h5
+        {font-size: 10pt;
+        margin: 5px;
+        padding: 0px;}
+
+h6
+        {font-size: 8pt;
+        margin: 5px;
+        padding: 0px;}
+
+p, ul
+        {margin: 5px;
+        padding: 0px;}
+
+.servicesBorder {
+        border: 1px white solid;
+        padding: 3px;
+}
+
+a.normalLink:link{
+        color: #E77919;
+}
+
+a.normalLink:visited{
+        color: #E77919;
+}
+
+a.normalLink:hover{
+        background-color: white;
+        color: #E77919;
+}
+
+a.sorting:link{
+        color: #E77919;
+}
+
+a.sorting:visited{
+        color: #E77919;
+}
+
+a.sorting:hover{
+        background-color: white;
+        color: #E77919;
+}
+
+a.selectedSortingMethod:link{
+        color: #E77919;
+}
+
+a.selectedSortingMethod:visited{
+        color: gray;
+}
+
+.centered {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+}
+
+.centeredTable {
+	    margin-top: 3px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        border-collapse: collapse;
+        border: 1px solid white;
+}
+
+.highlightedRow {
+  background-color: #ffffff;
+ }
+ 
+.highlightedCell {
+	background-color: #E77919;
+}

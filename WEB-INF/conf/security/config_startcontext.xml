@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file is part of deegree, for copyright/license information, please visit http://www.deegree.org/license. -->
+<deegree:Drm xmlns:deegree="http://www.deegree.org/security">
+    <deegree:availableWMC>
+        <!-- must contain an entry for each start context that shall be used by the context chooser -->
+        <!-- relative paths from this file to $iGeoPortal_home$ probably need to be adjusted on your system -->
+        <deegree:WMC isDefault="1">
+            <deegree:Name>startcontext</deegree:Name>
+            <deegree:URL>../../../../deegree2_igeo_std/WEB-INF/conf/igeoportal/wmc_start_utah.xml</deegree:URL>
+        </deegree:WMC>
+        <deegree:WMC>
+            <deegree:Name>saltLakeCity</deegree:Name>
+            <deegree:URL>../../../../deegree2_igeo_std/WEB-INF/conf/igeoportal/wmc_saltlake.xml</deegree:URL>
+        </deegree:WMC>
+        <!-- add more context files here -->
+        <!-- 
+        <deegree:WMC>
+            <deegree:Name>someName</deegree:Name>
+            <deegree:URL>../some/path/to/wmc.xml</deegree:URL>
+        </deegree:WMC>
+        -->
+    </deegree:availableWMC>
+    <deegree:UserDirectory>../../../../deegree2_igeo_std/WEB-INF/conf/igeoportal/users</deegree:UserDirectory>    
+</deegree:Drm>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!-- This file is part of deegree, for copyright/license information, please visit http://www.deegree.org/license. -->
+<security>
+  <registryClass>org.deegree.security.drm.SQLRegistry</registryClass>
+  <readWriteTimeout>300</readWriteTimeout>
+  <registryConfig>
+    <JDBCConnection xmlns="http://www.deegree.org/jdbc">
+      <!-- POSTGRES -->
+      <Driver>org.postgresql.Driver</Driver>
+      <Url>jdbc:postgresql://localhost/security</Url>
+      <User>postgres</User>
+      <Password/>
+      <SecurityConstraints/>
+      <Encoding>UTF-8</Encoding>
+      <!-- ORACLE -->
+      <!--
+           <Driver>oracle.jdbc.OracleDriver</Driver>
+           <Url>jdbc:oracle:thin:@localhost:1521:orcl</Url>
+           <User>security</User>
+           <Password>security</Password>
+           <SecurityConstraints/>
+           <Encoding>iso-8859-1</Encoding>
+           -->
+    </JDBCConnection>
+  </registryConfig>
+</security>

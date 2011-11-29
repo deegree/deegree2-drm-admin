@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!-- This file is part of deegree, for copyright/license information, please visit http://www.deegree.org/license. -->
+<web-app>
+  <display-name>deegree 2 - drm-admin</display-name>
+  <servlet>
+    <servlet-name>SecurityRequestDispatcher</servlet-name>
+    <servlet-class>org.deegree.portal.standard.security.control.SecurityRequestDispatcher</servlet-class>
+    <init-param>
+      <param-name>Handler.configFile</param-name>
+      <param-value>WEB-INF/conf/security/security_controller.xml</param-value>
+    </init-param>
+    <init-param>
+      <param-name>Security.configFile</param-name>
+      <param-value>WEB-INF/conf/security/security.xml</param-value>
+    </init-param>
+<!--
+    true if several services of one type should be supported. In this case the service must be accessible
+    for drm-admin without security restrictions and authentication
+-->
+    <init-param>
+      <param-name>supportManyServices</param-name>
+      <param-value>true</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SecurityRequestDispatcher</servlet-name>
+    <url-pattern>/SecurityRequestDispatcher</url-pattern>
+  </servlet-mapping>
+</web-app>

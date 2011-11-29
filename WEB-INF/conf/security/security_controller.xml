@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!-- This file is part of deegree, for copyright/license information, please visit http://www.deegree.org/license. -->
+<controller>
+  <event name="addService" class="org.deegree.portal.standard.security.control.AddServiceListener" next="serviceseditor.jsp"/>
+  <event name="removeService" class="org.deegree.portal.standard.security.control.RemoveServiceListener" next="serviceseditor.jsp"/>
+  <event name="editService" class="org.deegree.portal.standard.security.control.EditServiceListener" next="editservice.jsp"/>
+  <event name="updateService" class="org.deegree.portal.standard.security.control.UpdateServiceListener" next="updateservice.jsp"/>
+  <event name="updateObjects" class="org.deegree.portal.standard.security.control.UpdateObjectsListener" next="message.jsp"/>
+  <event name="reallyUpdateService" class="org.deegree.portal.standard.security.control.ReallyUpdateServiceListener" next="message.jsp"/>
+  <event name="init" class="org.deegree.portal.standard.security.control.InitListener" next="start.jsp"/>
+  <event name="loginUser" class="org.deegree.portal.standard.security.control.LoginUserListener" next="menu.jsp"/>
+  <event name="logoutUser" class="org.deegree.portal.standard.security.control.LogoutUserListener" next="index.jsp"/>
+  <event name="initServicesEditor" class="org.deegree.portal.standard.security.control.InitServicesEditorListener" next="serviceseditor.jsp"/>
+  <event name="initUserEditor" class="org.deegree.portal.standard.security.control.InitUserEditorListener" next="usereditor.jsp">
+    <!-- you might want to comment in this parameter in order to use the
+         context chooser extension for iGeoPortal -->
+    <!--
+        <parameter>
+          <name>configFile</name>
+          <value>WEB-INF/conf/security/config_startcontext.xml</value>
+        </parameter>
+        -->
+  </event>
+  <event name="storeUsers" class="org.deegree.portal.standard.security.control.StoreUsersListener" next="message.jsp"/>
+  <event name="initGroupEditor" class="org.deegree.portal.standard.security.control.InitGroupEditorListener" next="groupeditor.jsp"/>
+  <event name="storeGroups" class="org.deegree.portal.standard.security.control.StoreGroupsListener" next="message.jsp"/>
+  <event name="getUsers" class="org.deegree.portal.standard.security.control.GetUsersListener" next="getusers.jsp"/>
+  <event name="initRoleEditor" class="org.deegree.portal.standard.security.control.InitRoleEditorListener" next="roleeditor.jsp"/>
+  <event name="storeRoles" class="org.deegree.portal.standard.security.control.StoreRolesListener" next="message.jsp"/>
+  <event name="editRights" class="org.deegree.portal.standard.security.control.InitRightsEditorListener" next="rightseditor.jsp"/>
+  <event name="editServiceRights" class="org.deegree.portal.standard.security.control.InitServiceRightsEditorListener" next="servicerightseditor.jsp"/>
+  <event name="storeRights" class="org.deegree.portal.standard.security.control.StoreRightsListener" next="message.jsp"/>
+  <event name="storeServicesRights" class="org.deegree.portal.standard.security.control.StoreServicesRightsListener" next="message.jsp"/>
+  <event name="initSecuredObjectsEditor" class="org.deegree.portal.standard.security.control.InitSecuredObjectsEditorListener" next="securedobjectseditor.jsp"/>
+  <event name="storeSecuredObjects" class="org.deegree.portal.standard.security.control.StoreSecuredObjectsListener" next="message.jsp"/>
+</controller>
